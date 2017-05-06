@@ -38,6 +38,25 @@
 	div.footerimg{
 		float: left;
 	}
+	div.thumbnail{
+   	 	display: block;
+    		padding: 4px;
+	    	margin-bottom: 20px;
+    		line-height: 1.42857143;
+	    	background-color: #fff;
+    		border: 1px solid #ddd;
+   	 	border-radius: 4px;
+    		-webkit-transition: border .2s ease-in-out;
+    		-o-transition: border .2s ease-in-out;
+    		transition: border .2s ease-in-out;
+		background: #e3ebf7;
+		width: 310px;
+	}
+	div.thumbnail img{
+		max-width: 300px;
+		max-height:200px;
+	}
+
     </style>
   </head>
 
@@ -48,7 +67,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">Jayson Boubin</a>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -67,12 +85,90 @@
     <div class="container">
       <!--<div class="About Me">-->
         <h1>Research</h1>
-	</div>
+	<br>
 	<div class="content">
-		<h2>Research1</h2>
-		<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
-	
+	  <h3>Trust Calibration in Human-Automation Teams</h3>
+	 <!--<div class="row">-->
+	    <div class="col-md-12">
+	      
+	      <div>
+		<p><font size="3">At AFIT, I conducted experimental research on trust calibration in human-automation teams. Trust is the cornerstone of all human relationships. Relationships with advanced automated agents are similar. To ensure optimal performance, human users must appropriately trust automation. An operator who is too trusting of automation may allow automation errors to go uncorrected, while an operator who trusts the agent too little will not receive maximum benefit from the aid of an automated agent. We sought to understand the mechanisms necessary to classify humans as calibrated or uncalibrated. Calibration is the relationship between the human perception of an automated agent's ability and its actual ability. Calibrated users will be able to, through experience or instinct, identify and work with automated agents in a capacity relative to their ability. Our goal of this project is to create a model to classify calibrated users and uncalibrated users with a particular system. By classifying calibrated and undercalibrated users in larger systems, it may be possible to augment automation strategies to fit users calibration profiles. To perform calibration experiments, we used an environment called Space Navigator</font></p>
+	      </div>
+	      <div class="pull-right" style = "float: right">
+		<img src="researchImages/SpaceNav.png" alt="space navigator" height="264", width="428">
+	      </div>
 
+	 
+		<p><font size="3">Space Navigator is an air-traffic control style game specifically designed to evaluate the effectiveness of human-automation teams. It includes multiple types of automated agents, the ability to capture and time events, and the ability to impose easily distinguishable taskload levels, allowing researchers to easily study human-automation team dynamics and evaluate theoretical models in an experimental environment. Space Navigator has been developed at AFIT for years by a number of researchers. It was developed in Unity using C#. While at AFIT, I modified Space Navigator for use in a participant study in combination with The Ohio State University, used for multiple independent research projects, including our calibration study. My modifications to the game included data management and reporting fixes, interface changes, and the addition of psychological measures, such as an Implicit Association Test and subjective trust questionnaires. The data gathered from this study was used in the masters thesis of Lt. Anthony Hillesheim at AFIT and the PhD Dissertation of Lorraine Borghetti at OSU as well as other scholarly work</font></p>
+		
+		<p><font size="3">Using data from the participant study, we created a model for classifying participants by calibration which incorporates compliance and performance data from a few hours of gameplay. We used the results of our model and more data points to train a random-forest machine learning algorithm to classify participants as calibrated, undercalibrated, or overcalibrated using only 4 minutes worth of gameplay. Preliminary results show that the random forest algorithm has a 98% success rate in classifying participants with 4 minutes of data as compared to the classification model using multiple hours of gameplay data.</font></p>
+	</div>
+	
+	  <h3>Quantifying and Influencing Trust in Human-Automation Teams</h3>
+	    <div class="col-md-12">
+		<p>Human-Automation teams </p>
+		<p>Algorithms and models for compliance/reliance</p>
+		<p>Paper on compliance/reliance</p>
+		<div class=posters>
+		<h4>Posters and Presentations</h4>
+		<div class="row">
+  		  <div class="col-md-6">
+    		    <div class="thumbnail">
+      		      <img src="posters/elicitingalgorithm.png" alt="eliciting algorithm" width="300" height="200">
+      			<div class="caption">
+        		  <h3>Eliciting an Algorithm to Replicate Human Trust in Automation</h3>
+        		  <p>Poster Presented at the Dayton Engineering and Science Symposium, 2015</p>
+        		    <p><a href="posters/elicitingalgorithm.png" class="btn btn-outline-primary" role="button" download>Download</a></p>
+      			</div>
+    		      </div>
+  		    </div>
+		  
+	            <div class="col-md-6">
+    		      <div class="thumbnail">
+      		        <img src="posters/iiePres.png" alt="IIE prsentation 2016" width="300" height="200">
+      			  <div class="caption">
+        		  <h3>Quantifying and Evaluating Trust in Automated Systems</h3>
+        		  <p>Talk Presented by Maj. Christina Rusnock,PhD, Institute of Industrial Engineers Anual Conference, 2016</p>
+        		    <p><a href="posters/IIE Presentation - Trust - Boubin-Rusnock 2016.05.22.odp" class="btn btn-outline-primary" role="button" download>Download</a></p>
+      			</div>
+    		      </div>
+  		    </div>
+		  </div> 
+		</div>
+		<div class=citations>citations</div>
+	    </div>
+	  <h3>IMPRINT Study</h3>
+	    <div class="col-md-12">
+		<p class="lead">Explain IMPRINT<br>Cyber security operators<br>modeling them</p>
+		<div class="row">
+  		  <div class="col-md-6">
+    		    <div class="thumbnail">
+      		      <img src="posters/cognitiveWorkloadCyberOperators.png" alt="eliciting algorithm" width="300" height="200">
+      			<div class="caption">
+        		  <h3>Modeling Cognitive Workload and Fatigue for Defensive Cyber Security Operators</h3>
+        		  <p>Poster Presented at the AFIT SOCHE Intern Poster Session, 2014</p>
+        		    <p><a href="posters/CyberSecurityModelingPoster2014.pdf" class="btn btn-outline-primary" role="button" download>Download</a></p>
+      			</div>
+    		      </div>
+  		    </div>
+		</div>
+	     </div>
+	  <h3>Dynamic Process Migration</h3>
+	    <div class="col-md-12">
+		<p class="lead">MUSE/Timewarp algorithm<br>Simulation Background<br>poster</p>	
+	        <div class="row">
+  		  <div class="col-md-6">
+    		    <div class="thumbnail">
+      		      <img src="posters/DynamicProcessMigration.png" alt="eliciting algorithm" width="300" height="200">
+      			<div class="caption">
+        		  <h3>Dynamic Process Migration in Agent-Based Simulation</h3>
+        		  <p>Poster presented at the Miami University Undergraduate Research Forum, 2014</p>
+        		    <p><a href="posters/DynamicProcessMigration.pdf" class="btn btn-outline-primary" role="button" download>Download</a></p>
+      			</div>
+    		      </div>
+  		    </div>
+		</div>
+	     </div>
 	</div>
       <!--</div>-->
     </div><!-- /.container -->
