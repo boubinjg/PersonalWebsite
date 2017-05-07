@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <title>Projects</title>
+    <title>Research</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +38,25 @@
 	div.footerimg{
 		float: left;
 	}
+	div.thumbnail{
+   	 	display: block;
+    		padding: 4px;
+	    	margin-bottom: 20px;
+    		line-height: 1.42857143;
+	    	background-color: #fff;
+    		border: 1px solid #ddd;
+   	 	border-radius: 4px;
+    		-webkit-transition: border .2s ease-in-out;
+    		-o-transition: border .2s ease-in-out;
+    		transition: border .2s ease-in-out;
+		background: #e3ebf7;
+		width: 310px;
+	}
+	div.thumbnail img{
+		max-width: 300px;
+		max-height:200px;
+	}
+
     </style>
   </head>
 
@@ -48,17 +67,16 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">Jayson Boubin</a>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="research.html">Research</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" hr class="st-only">(Projects)</span></a>
+            <a class="nav-link" hr class="sr-only">(Projects)</a>
           </li>
         </ul>
       </div>
@@ -66,23 +84,39 @@
 
     <div class="container">
       <!--<div class="About Me">-->
-        <h1>About Me</h1>
-	<div class="row justify-content-between">
-	  <div class="col-md-4">
-		<img src="ProfilePicture.jpg" alt = "Profile Picture" height = "200" width = "200">
-          </div>
+        <h1>Projects</h1>
+	<br>
+	<h3>DSpace Profile Module Capstone Project</h3>
+	    <div class="col-md-12">
+		<div class="pull-right" style="float: right">
+		  <img src="researchImages/CausalLoop.png" alt="causalLoop" height="261", width="300">
+		</div>
+
+	 	<div class=poster>
+		<h4>Posters and Presentations</h4>
+		<div class="row">
+  		  <div class="col-md-6">
+    		    <div class="thumbnail">
+      		      <img src="posters/elicitingalgorithm.png" alt="eliciting algorithm" width="300" height="200">
+      			<div class="caption">
+        		  <h3>Eliciting an Algorithm to Replicate Human Trust in Automation</h3>
+        		  <p>Poster Presented at the Dayton Engineering and Science Symposium, 2015</p>
+        		    <p><a href="posters/elicitingalgorithm.png" class="btn btn-outline-primary" role="button" download>Download</a></p>
+      			</div>
+    		      </div>
+  		    </div>
+		<h5>Citations</h5>
+		<ul><font size="2">
+		  <li> Boubin, J.G, Macfarland, J.W, Kirsten, B.S, Wilson, C(2017 May) Scholarly Commons Capstone, Poster presented at the Miami University Senior Design Expo, Oxford, Ohio.</li>	
+		  </font>
+		</ul>
+	    </div>
 	  
-	  <div class="col-md-6">
-    	    <p class="Contact"><font size = "6">Jayson Boubin</font><br>PhD Student</p>
-	    <p class="contact"><a href ="https://cse.osu.edu/">Computer Science & Engineering</a>
-	    <br><a href="https://www.osu.edu/">The Ohio State University</a>
-	    <br><br>Email: boubin.2@osu.edu<br>Phone: (513)406-0144</p>
 	  </div>
 	</div>
-	<div class="content">
-		<p class="lead">I am currently an incoming PhD student in computer science at Ohio State University working with Dr. Christopher Stewart in the <a href="http://web.cse.ohio-state.edu/~stewart.962/rerout.html">ReRout lab</a>. My research will focus on high performance system design for autonomous unmanned aerial vehicles in the agricultural domain. My present and past work is mainly in the fields of high performance computing, automation, simulation, and computer systems as a whole. <br><br>
-I received a B.S in computer science from Miami University in May of 2017. While studying at Miami, I worked with Dr. Dhananjai Rao creating efficient process parallel agent based simulations. I later worked for the United States Department of Defense at the Air Force Institute of Technology under Maj. Christina Rusnock, PhD. Under Maj. Rusnock, I worked on multiple projects relating to discrete event simulation, automation theory,and system design. </p>
-       </div>
+	<h3>Micro-language Compiler</h3>
+	<h3>AI Game Project</h3>
+	<h3>IMPRINT Wikipedia page</h3>
       <!--</div>-->
     </div><!-- /.container -->
     <footer class="footer">
