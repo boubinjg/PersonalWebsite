@@ -101,7 +101,7 @@
       </div>
     </nav>
 
-    <div class="container">d
+    <div class="container">
         <h1>Research</h1>
 	<br>
 	<div class="content">
@@ -146,7 +146,7 @@
 	      
 		<p>We continued to analyze the data, looking for a general model for reliance and compliance in relation to automated systems. The system level model we created relates trust behaviors to objective variables, like automation reliability, performance, and user taskload, and also to subjective variables, such as user trust, acceptance, stress, and automation predictability</p>
 	     </div>	
-	     </div>
+	     
 		<h4>Posters and Presentations</h4>
 		</div>
 		<div class="row">
@@ -161,7 +161,7 @@
     		      </div>
   		    </div>
 		  
-	            <div class="col-lg-4 col-lg-offset-4 col-md-6">
+	            <div class="col-lg-4 col-md-6">
     		      <div class="thumbnail">
       		        <img src="posters/iiePres.png" alt="IIE prsentation 2016" width="300" height="200">
       			  <div class="caption">
@@ -185,15 +185,18 @@ Wright State University, Ohio</li>
 		  </font>
 		</ul>
 	      </div>
-	      </div>
 	    </div>
-	  </div>
+	  
 	  <h3>Cognitive Workload Modeling of Cyber Operators</h3>
 	  <h6><i>With Dr. Brett Borghetti, Greg Dye, and Maj. Christina Rusnock</i></h6>
 	    <div class="col-md-12">
 		<p><font size="3">When I first started working at AFIT in 2014, I applied cognitive workload modeling research to the cyber security domain. We analyzed the function of the intrusion detection and reporting systems used by Air Force cyber security operators to find high workload components. Workload, a measure of the total mental effort required to perform a task, can be used to streamline large scale systems. In critical systems, like cyber operations, small changes in parts of the process can drastically decrease workload and increase operator attentiveness and performance.</p>
-		<div class="row" style="float: right">
- 		  <div class="col-md-6 col-xs-12">
+		<div class="row">
+		  <div class="col-lg-8 col-md-6 col-xs-12">
+		  <p>To model workload, we used IMPRINT, a discrete event simulation and human performance modeling tool. We created a simulation of the intrusion detection process based on descriptions of the process by a subject matter expert. We analyzed the workload results, learning that the system included extremely variable workload, where operators went from high workload to low workload tasks very often. Operators also undergo long periods of constant vigilance. Using this current system, operators must be constantly watching their monitors, like a driver watching for deer on a dark country road. This research has been used by others at AFIT to improve interface design for military cyber operations intrusion detection systems.</p> 
+		  <p>After determining the workload related to the high-vigilance task, we decided to create a framework for modeling fatigue related to vigilance tasks. High workload situations are known to cause increased operator fatigue. If operators are experiencing high workload for long periods of time, they will begin to feel the effects of vigilance decrement and fatigue. The IMPRINT community did not have a framework for handling vigilance decrement, so we set out to find a framework of our own. Initially, used we a sustained attention equation found by researchers in the late 1980s which related well to our domain. Eventually we settled on modeling the Psychomotor Vigilance Task, a test used to measure vigilance decrement in times of sleep deprivation. By creating a model instead of using an equation, we created a more general, adaptable, and understandable framework for modeling vigilance decrement and fatigue.</font></p>
+		  </div>
+ 		  <div class="col-lg-4 col-md-6 col-xs-12">
     		    <div class="thumbnail">
       		      <img src="posters/cognitiveWorkloadCyberOperators.png" alt="eliciting algorithm" width="300" height="200">
       			<div class="caption">
@@ -205,8 +208,6 @@ Wright State University, Ohio</li>
   		    </div>
 		</div>
 
-		<p>To model workload, we used IMPRINT, a discrete event simulation and human performance modeling tool. We created a simulation of the intrusion detection process based on descriptions of the process by a subject matter expert. We analyzed the workload results, learning that the system included extremely variable workload, where operators went from high workload to low workload tasks very often. Operators also undergo long periods of constant vigilance. Using this current system, operators must be constantly watching their monitors, like a driver watching for deer on a dark country road. This research has been used by others at AFIT to improve interface design for military cyber operations intrusion detection systems.</p> 
-		<p>After determining the workload related to the high-vigilance task, we decided to create a framework for modeling fatigue related to vigilance tasks. High workload situations are known to cause increased operator fatigue. If operators are experiencing high workload for long periods of time, they will begin to feel the effects of vigilance decrement and fatigue. The IMPRINT community did not have a framework for handling vigilance decrement, so we set out to find a framework of our own. Initially, used we a sustained attention equation found by researchers in the late 1980s which related well to our domain. Eventually we settled on modeling the Psychomotor Vigilance Task, a test used to measure vigilance decrement in times of sleep deprivation. By creating a model instead of using an equation, we created a more general, adaptable, and understandable framework for modeling vigilance decrement and fatigue.</font></p>
 	<h5>Citations</h5>
 		<ul><font size="2">
 		  <li>Christina F. Rusnock, Jayson G. Boubin, Joseph J. Giametta, Tyler J. Goodman, Anthony J. Hillesheim, Sungbin Kim, David R. Meyer, Michael E. Watson: The Role of Simulation in Designing Human-Automation
@@ -219,10 +220,11 @@ Wright Patterson Air Force Base, Ohio. </li>
 	</div>
 	  <h3>Dynamic Process Migration in Agent Based Simulation</h3>
 	  <h6><i>With Dr. Dhananjai Rao, and Paul Bondurant</i></h6>
-	    <div class="col-md-12">
-		<div class="row">
+	    <div class="row">
 		  <div class ="col-lg-8 col-md-6 col-xs-12">
 		  <p><font size="3">As a freshman at Miami in 2013, I worked with Dr. Dhananjai Rao and Paul Bondurant on dynamic process migration in agent based simulation. Agent based simulations track interactions between independent agents interacting in an environment. As with all simulations, all interactions are dependent on the clock. For the simulation to yield proper results, all interacting agents must be on the same clock time. This is not usually an issue in serial agent based simulations. In parallel agent based simulations, agents in one process may be at a different clock time than agents in another process. Even if the two processes started at the same time, minute hardware differences, discrepancies in required processing, and the random nature of simulations can all cause clocks between processes to be out of sync.</p>
+		  <p>The time-warp algorithm fixes this issue. If two agents on different clock times interact, time is turned back for the agent furthest in the future. The issue with this algorithm is that it is very time consuming to run. When an agent rewinds, all of its interactions must be redone, which can take considerable processing time. The goal of this research, Paul Bondurant's Masters thesis, was to limit the the number of interactions by keeping groups of agents who interacted often on the same clock time. Using a multi-node compute cluster, Paul devised an algorithm to move commonly communicating processes to similar nodes, to cut down on time warps.</font></p>
+		 
 		  </div>
   		  <div class="col-lg-4 col-md-6 col-xs-12">
     		    <div class="thumbnailBS pull-right">
@@ -233,13 +235,9 @@ Wright Patterson Air Force Base, Ohio. </li>
         		    <p><a href="posters/DynamicProcessMigration.pdf" class="btn btn-outline-primary" role="button" download>Download</a></p>
       			</div>
     		      </div>
-  		    </div>
 		</div>
-
-		<p><font size="3">As a freshman at Miami in 2013, I worked with Dr. Dhananjai Rao and Paul Bondurant on dynamic process migration in agent based simulation. Agent based simulations track interactions between independent agents interacting in an environment. As with all simulations, all interactions are dependent on the clock. For the simulation to yield proper results, all interacting agents must be on the same clock time. This is not usually an issue in serial agent based simulations. In parallel agent based simulations, agents in one process may be at a different clock time than agents in another process. Even if the two processes started at the same time, minute hardware differences, discrepancies in required processing, and the random nature of simulations can all cause clocks between processes to be out of sync.</p>
-		
-		<p>The time-warp algorithm fixes this issue. If two agents on different clock times interact, time is turned back for the agent furthest in the future. The issue with this algorithm is that it is very time consuming to run. When an agent rewinds, all of its interactions must be redone, which can take considerable processing time. The goal of this research, Paul Bondurant's Masters thesis, was to limit the the number of interactions by keeping groups of agents who interacted often on the same clock time. Using a multi-node compute cluster, Paul devised an algorithm to move commonly communicating processes to similar nodes, to cut down on time warps.</p>
-		<p>This was my first experience with novel research. To help Paul, I performed documentation and ran tests on Miami's Redhawk compute cluster. I learned far more than I bargained for about high performance computing, parallelism, simulation, and research in general. After helping on this project, I was hooked. I continued with research throughout undergrad with the Air Force, and now I am pursuing a PhD.
+		</div> 
+		<p><font size="3">This was my first experience with novel research. To help Paul, I performed documentation and ran tests on Miami's Redhawk compute cluster. I learned far more than I bargained for about high performance computing, parallelism, simulation, and research in general. After helping on this project, I was hooked. I continued with research throughout undergrad with the Air Force, and now I am pursuing a PhD.
 		</font></p>
 
 	    <h5>Citations</h5>
