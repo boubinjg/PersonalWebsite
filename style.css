@@ -1,10 +1,6 @@
 body {
 	background-color: #3a4e58;
 }
-a {
-	color: black;
-	text-decoration: underline;
-}
 div.container{
 	padding-top:70px;
 	padding-bottom:70px;
@@ -66,9 +62,24 @@ div.thumbnailBS img{
 div.container{
 	background-color: #91a5ba;
 }
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+.dropdown-menu li{
+	display: block;
+	top: -15px;
+	position: relative;
+}
+a{
+	color: #adadad;
+}
+div.container.a {
+	color: black;
+}
 .dropdown-menu{
 	padding: 10px;
 	white-space: nowrap;
-	background-color: #3a4e58
+	background-color: #292b2c;
+	border-style: hidden;
 }
 
