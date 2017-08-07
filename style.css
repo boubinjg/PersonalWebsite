@@ -70,10 +70,7 @@ div.container{
 	top: -15px;
 	position: relative;
 }
-a{
-	color: #adadad;
-}
-div.container.a {
+a {
 	color: black;
 }
 .dropdown-menu{
